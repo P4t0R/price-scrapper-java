@@ -7,12 +7,14 @@ Permite capturar precio de tienda retail de productos previamente seleccionados.
 
 ## Tabla de Contenidos
 
-- [Características](#características)
-- [Requisitos](#requisitos)
-- [Instalación](#instalación)
-- [Uso](#uso)
-- [Contribución](#contribución)
-- [Licencia](#licencia)
+- [Características](#Características)
+- [Requisitos](#Requisitos)
+- [Instalación](#Instalación)
+- [Linux](#Linux)
+- [Docker](#Docker)
+- [mySql](#mySql)
+
+
 
 ## Características
 
@@ -51,3 +53,28 @@ sudo apt install openjdk-17-jdk
 #Seleccionar version java
 sudo update-alternatives --config java
 ```
+
+
+## Docker
+
+```bash
+#Lista contenedores
+sudo docker ps
+
+#Abrir terminal de contenedor
+sudo docker exec -it [NOMBRE_CONTENEDOR] bash
+```
+
+## mySql
+
+```bash
+#Comandos basicos
+mysql -u username -p;  
+show databases;
+create database db_name;  
+select database();
+use db_name;  
+show tables;
+describe table_name;
+```
+
