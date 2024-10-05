@@ -77,4 +77,3 @@ use db_name;
 show tables;
 describe table_name;
 ```
-
