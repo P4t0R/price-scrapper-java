@@ -76,4 +76,14 @@ select database();
 use db_name;  
 show tables;
 describe table_name;
+
+#Usuarios
+SELECT CURRENT_USER();
+CREATE USER 'boot'@'localhost' IDENTIFIED BY 'tu_contraseña';
+GRANT ALL PRIVILEGES ON db_data.* TO 'boot'@'localhost';
+FLUSH PRIVILEGES;
+
+#Esto otorgará todos los privilegios sobre la base de datos db_data al usuario boot, permitiendo conexiones desde cualquier host ('%').
+GRANT ALL PRIVILEGES ON db_data.* TO 'boot'@'%';
+FLUSH PRIVILEGES;
 ```
