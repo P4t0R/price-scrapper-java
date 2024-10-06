@@ -15,6 +15,21 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
+/**
+ * Clase que representa un producto en la base de datos.
+ * 
+ * Esta clase está mapeada a la tabla "products" y contiene información
+ * relevante sobre el producto, incluyendo su precio, nombre, código,
+ * marca, categoría, imagen y otros detalles.
+ * 
+ * Ejemplo de una fila en la tabla "products":
+ * 
+ * | productId | productPrice | productName | productCode | productBrand | productCategory | productImg                           | retail | createdAt           | updatedAt           |
+ * |-----------|--------------|-------------|-------------|--------------|-----------------|--------------------------------------|--------|---------------------|---------------------|
+ * | 1         | 29.99        | T-Shirt     | TSH123      | BrandA       | Apparel         | http://example.com/images/tshirt.jpg | ONLINE | 2024-10-05T10:00:00 | 2024-10-05T12:00:00 |
+ * 
+ */
+
 @Data
 @Entity
 @NoArgsConstructor
