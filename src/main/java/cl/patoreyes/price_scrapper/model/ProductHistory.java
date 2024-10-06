@@ -8,12 +8,27 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-// import lombok.Data;
+import lombok.Data;
 // import lombok.AllArgsConstructor;
 // import lombok.NoArgsConstructor;
 
 
-// @Data
+/**
+ * Clase que representa el historial de cambios de un producto en la base de datos.
+ * 
+ * Esta clase está mapeada a la tabla "product_history" y contiene información
+ * sobre las modificaciones realizadas en los productos, incluyendo el precio,
+ * nombre, código y la fecha de la última actualización.
+ * 
+ * Ejemplo de una fila en la tabla "product_history":
+ * 
+ * | id | productPrice | productName | productCode | updatedAt           |
+ * |----|--------------|-------------|-------------|---------------------|
+ * | 1  | 29.99        | T-Shirt     | TSH123      | 2024-10-05T12:00:00 |
+ * 
+ */
+
+@Data
 // @NoArgsConstructor
 // @AllArgsConstructor
 @Entity
